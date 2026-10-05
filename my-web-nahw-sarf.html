@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>النحو والصرف - الآجرومية ولامية الأفعال</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{--bgL:#f6f0dc;--bgD:#10303a;--acL:#8a5a00;--acD:#e8c35a;--fgL:#1e2a26;--fgD:#f6efd6;--bg:var(--bgL);--fg:var(--fgL);--ac:var(--acL);--card:rgba(255,255,255,.8);--ok:#1d8a4d;--no:#c0392b;--line:rgba(0,0,0,.2);--fill:rgba(0,0,0,.05);--sh:0 8px 24px rgba(0,0,0,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-b="ajr"]{--bgL:#e9f2e2;--bgD:#0d3a2b}
+:root[data-b="lam"]{--bgL:#eeeafa;--bgD:#211b52;--acL:#b0402a;--acD:#ff9d76}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:var(--bgD);--fg:var(--fgD);--ac:var(--acD);--card:rgba(0,0,0,.4);--ok:#7be0a0;--no:#ff8a8a;--line:rgba(255,255,255,.25);--fill:rgba(255,255,255,.07);--sh:0 8px 24px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:var(--bgD);--fg:var(--fgD);--ac:var(--acD);--card:rgba(0,0,0,.4);--ok:#7be0a0;--no:#ff8a8a;--line:rgba(255,255,255,.25);--fill:rgba(255,255,255,.07);--sh:0 8px 24px rgba(0,0,0,.4)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font:400 1.25rem/1.9 "Amiri","Traditional Arabic",serif;transition:background .5s,color .5s}
+.bg{position:fixed;inset:auto 0 0 0;z-index:0;pointer-events:none;display:flex;justify-content:center;opacity:.65}
+.bg svg{width:min(100%,640px);height:auto;display:block}
+.b1,.b2{transform-box:fill-box;transform-origin:center;transition:opacity .5s}
+.b1{animation:fl 7s ease-in-out infinite}.b2{animation:fl 6s ease-in-out -2.5s infinite}
+:root[data-b="ajr"] .b2,:root[data-b="lam"] .b1{opacity:.3}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(.8deg)}}
+@media (prefers-reduced-motion:reduce){.b1,.b2{animation:none}}
+.wrap{position:relative;z-index:1;max-width:46rem;margin:0 auto;padding:0 1.2rem 4rem}
+h1,h2,h3,nav a{font-family:"Reem Kufi","Amiri",serif;font-weight:700}
+nav{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;padding:1.2rem 0}
+nav a{color:var(--fg);text-decoration:none;padding:.25rem .9rem;border-radius:2rem;font-size:1.05rem;border:2px solid transparent}
+nav a.on{border-color:var(--ac);color:var(--ac)}
+.tg{font:inherit;font-size:1rem;color:var(--fg);background:var(--card);border:2px solid var(--line);border-radius:2rem;padding:.1rem .9rem;cursor:pointer;margin-inline-start:auto}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+h1{font-size:clamp(2.4rem,9vw,4rem);line-height:1.3;margin:1.5rem 0 .6rem;color:var(--ac)}
+.sub{margin:0 0 1.6rem;max-width:34rem}
+.intro{background:var(--card);box-shadow:var(--sh);backdrop-filter:blur(6px);border-radius:1.4rem;padding:1.1rem 1.4rem;margin:0 0 1.4rem;border-inline-start:8px solid var(--ac);font-size:1.3rem}
+.books{display:grid;gap:1rem}
+.bk{display:block;text-decoration:none;color:var(--fg);background:var(--card);box-shadow:var(--sh);backdrop-filter:blur(6px);border-radius:1.4rem;padding:1.3rem 1.4rem;border-inline-start:8px solid}
+.bk h2{margin:0;font-size:1.9rem}
+.bk p{margin:.2rem 0 0}
+.bk.ajr{border-color:#1f8a63}.bk.lam{border-color:#7a67ff}
+.ch{background:var(--card);box-shadow:var(--sh);backdrop-filter:blur(6px);border-radius:1.4rem;padding:1.3rem 1.4rem;margin:1.2rem 0}
+.ch h2{margin:0 0 .5rem;font-size:1.6rem;color:var(--ac)}
+.ct{font-size:1.5rem;font-weight:700;margin:0}
+.ex{list-style:none;margin:1rem 0;padding:0;display:grid;gap:.4rem}
+.ex li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed var(--line);padding-bottom:.3rem}
+.ex b{color:var(--ac)}
+.q{margin-top:1.2rem}
+.q p{margin:0 0 .4rem;font-weight:700}
+.o{display:block;width:100%;text-align:start;font:inherit;color:var(--fg);background:var(--fill);border:2px solid var(--line);border-radius:1rem;padding:.3rem 1rem;margin:.35rem 0;cursor:pointer}
+.o:hover{border-color:var(--ac)}
+.o.ok{border-color:var(--ok);font-weight:700}
+.o.no{border-color:var(--no)}
+.fb{margin:.3rem 0 0;font-size:1.1rem;min-height:1.6rem}
+.mt{font-size:1.35rem;border-inline-start:4px solid var(--ac);padding:.2rem 1rem;margin:.8rem 0;background:var(--fill);border-radius:.8rem}
+.ch h3{margin:1rem 0 .3rem;font-size:1.2rem;color:var(--ac)}
+.pt{padding-inline-start:1.4rem;margin:.4rem 0}.pt li{margin:.4rem 0}
+.soon{display:inline-block;font-family:"Reem Kufi",serif;font-size:.95rem;background:var(--ac);color:var(--bg);border-radius:2rem;padding:0 .8rem;margin-inline-start:.6rem;vertical-align:middle}
+.cs{text-align:center;padding:2.2rem 1.4rem}.cs .ct{font-size:2.2rem;color:var(--ac);animation:pl 2.6s ease-in-out infinite}
+@keyframes pl{50%{opacity:.5}}
+@media (prefers-reduced-motion:reduce){.cs .ct{animation:none}}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:0 0 1.2rem}
+.tabs a{color:var(--fg);text-decoration:none;font-family:"Reem Kufi",serif;font-weight:700;padding:.2rem 1.1rem;border-radius:2rem;border:2px solid var(--line);background:var(--card)}
+.tabs a.on{border-color:var(--ac);color:var(--ac)}
+.btn{display:inline-block;background:var(--ac);color:var(--bg);padding:.25rem 1.3rem;border-radius:2rem;text-decoration:none;font-family:"Reem Kufi",serif;font-weight:700}
+.res{font-size:1.4rem;font-weight:700;color:var(--ac);margin:1rem 0}
+summary{cursor:pointer;color:var(--ac);font-weight:700}
+.sub a{color:var(--ac)}
+@media (prefers-reduced-motion:reduce){.au{margin:.2rem 0 .6rem;opacity:.85;font-size:1rem}
+audio{width:100%;margin:.4rem 0}
+.ph{font-family:"Reem Kufi",serif;color:var(--ac);margin:1.6rem 0 .4rem}
+.up{list-style:none;padding:0;margin:.6rem 0;display:grid;gap:.5rem;counter-reset:u 3}
+.up li{counter-increment:u;background:var(--card);border-radius:1rem;padding:.2rem 1rem;opacity:.8;border-inline-start:6px solid var(--line)}
+.up li::before{content:counter(u) ". ";font-weight:700;color:var(--ac)}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+<svg viewBox="0 0 600 330" xmlns="http://www.w3.org/2000/svg" font-family="'Reem Kufi','Amiri',serif" text-anchor="middle">
+<g class="b1">
+<rect x="40" y="206" width="520" height="104" rx="12" fill="#1a5e43"/>
+<rect x="40" y="206" width="520" height="104" rx="12" fill="none" stroke="#e8c35a" stroke-width="3"/>
+<rect x="86" y="206" width="9" height="104" fill="#e8c35a"/><rect x="505" y="206" width="9" height="104" fill="#e8c35a"/>
+<path d="M120 222h360M120 296h360" stroke="#e8c35a" stroke-width="2" opacity=".7"/>
+<text x="300" y="266" font-size="54" font-weight="700" fill="#f2d57a">الآجرومية</text>
+<text x="300" y="288" font-size="19" fill="#f2d57a" opacity=".85" font-family="Amiri,serif">في مبادئ علم النحو</text>
+<rect x="552" y="214" width="14" height="88" rx="3" fill="#f1e6c8"/>
+<path d="M552 224h14M552 234h14M552 244h14M552 254h14M552 264h14M552 274h14M552 284h14" stroke="#c9b98f" stroke-width="1"/>
+</g>
+<g transform="rotate(-3.5 305 150)"><g class="b2">
+<rect x="90" y="98" width="430" height="98" rx="12" fill="#2f2780"/>
+<rect x="90" y="98" width="430" height="98" rx="12" fill="none" stroke="#ff9d76" stroke-width="3"/>
+<rect x="130" y="98" width="9" height="98" fill="#ff9d76"/><rect x="471" y="98" width="9" height="98" fill="#ff9d76"/>
+<path d="M160 112h290M160 184h290" stroke="#ff9d76" stroke-width="2" opacity=".7"/>
+<text x="305" y="156" font-size="50" font-weight="700" fill="#ffb996">لامية الأفعال</text>
+<text x="305" y="177" font-size="18" fill="#ffb996" opacity=".85" font-family="Amiri,serif">لابن مالك في الصرف</text>
+<rect x="76" y="106" width="14" height="82" rx="3" fill="#f1e6c8"/>
+<path d="M76 116h14M76 126h14M76 136h14M76 146h14M76 156h14M76 166h14M76 176h14" stroke="#c9b98f" stroke-width="1"/>
+</g></g>
+</svg>
+</div>
+<div class="wrap">
+<nav aria-label="التنقل"><a href="#home" data-n="home">الرئيسية</a><a href="#ajr" data-n="ajr">الآجرومية</a><a href="#lam" data-n="lam">لامية الأفعال</a><a href="#about" data-n="about">عن الموقع</a><button class="tg" id="th" type="button"></button></nav>
+<main id="m"></main>
+</div>
+<script>
+var B={
+ajr:{t:"الآجرومية",s:"متن ابن آجُرُّوم في مبادئ علم النحو",ch:[
+{t:"الكلام وأقسامه",m:"الكلام هو اللفظ المركّب المفيد بالوضع، وأقسامه ثلاثة: اسم، وفعل، وحرف جاء لمعنى.",
+e:["<b>اللفظ</b>: الصوت المشتمل على بعض الحروف، مثل «زيد». فالإشارة والكتابة ليستا لفظاً.","<b>المركّب</b>: ما تألّف من كلمتين فأكثر، مثل «قامَ زيدٌ». وكلمة «زيد» وحدها ليست مركّبة.","<b>المفيد</b>: ما يحسن السكوت عليه فيفهم السامع معنىً تاماً، مثل «الحقُّ واضحٌ». أما «إذا جاءَ زيدٌ» فالسامع ينتظر تمام الكلام.","<b>بالوضع</b>: أي باللغة العربية التي وضعها العرب؛ فالكلام بغير العربية لا يسمّى كلاماً في اصطلاح النحاة.","فإذا اجتمعت هذه الشروط سُمّي كلاماً، وأنواع الكلمة ثلاثة: اسم وفعل وحرف."],
+x:[["قامَ زيدٌ","كلام: لفظ مركّب مفيد"],["زيدٌ","ليس كلاماً: كلمة مفردة"],["إذا جاءَ زيدٌ","ليس كلاماً: لا يحسن السكوت عليه"]]},
+{t:"علامات الاسم والفعل والحرف",m:"فالاسم يُعرف بالخفض، والتنوين، ودخول الألف واللام، وحروف الخفض؛ والفعل يُعرف بقد، والسين، وسوف، وتاء التأنيث الساكنة؛ والحرف ما لا يصلح معه دليل الاسم ولا دليل الفعل.",
+e:["<b>الاسم</b> كلمة تدل على معنىً في نفسها دون زمن. من علاماته: الخفض (مررتُ بزيدٍ)، والتنوين (رجلٌ)، و«ال» (الكتابُ)، وحروف الخفض.","حروف الخفض: من، إلى، عن، على، في، رُبَّ، الباء، الكاف، اللام. وحروف القسم: الواو والباء والتاء.","<b>الفعل</b> كلمة تدل على حدث مرتبط بزمن. من علاماته: «قد» (قد قامَ)، والسين (سيقومُ)، وسوف (سوف يقومُ)، وتاء التأنيث الساكنة (قامَتْ).","<b>الحرف</b> لا يظهر معناه وحده، وإنما مع غيره، ولا يقبل علامة الاسم ولا علامة الفعل، مثل «هل» و«لم» و«لن»."],
+x:[["الكتابُ مفيدٌ","الكتابُ: اسم (ال)، مفيدٌ: اسم (تنوين)"],["قد نجحَ","نجحَ: فعل (دخلت عليه قد)"],["سيذهبُ","يذهبُ: فعل (دخلت عليه السين)"],["كتبَتْ","كتبَ: فعل (تاء التأنيث الساكنة)"],["هل جاءَ","هل: حرف استفهام"]]},
+{t:"الإعراب",m:"الإعراب هو تغيير أواخر الكلم لاختلاف العوامل الداخلة عليها لفظاً أو تقديراً، وأقسامه أربعة: رفع، ونصب، وخفض، وجزم. فللأسماء من ذلك الرفع والنصب والخفض ولا جزم فيها، وللأفعال من ذلك الرفع والنصب والجزم ولا خفض فيها.",
+e:["الإعراب أن يتغيّر آخر الكلمة بحسب موقعها في الجملة: «جاءَ زيدٌ»، «رأيتُ زيداً»، «مررتُ بزيدٍ»؛ فتغيّر آخر «زيد» بين الضمة والفتحة والكسرة.","<b>العوامل</b>: الكلمات التي تُحدث هذا التغيير، كالفعل (جاءَ، رأيتُ) وحرف الجر (الباء).","<b>لفظاً</b>: أن تظهر العلامة على آخر الكلمة (جاءَ زيدٌ). <b>تقديراً</b>: أن تكون العلامة منويّة لتعذّر ظهورها (جاءَ الفتى: الضمة مقدّرة على الألف).","الأسماء تُرفع وتُنصب وتُخفض ولا تُجزم، والأفعال المضارعة تُرفع وتُنصب وتُجزم ولا تُخفض."],
+x:[["جاءَ زيدٌ","زيدٌ: مرفوع بالضمة"],["رأيتُ زيداً","زيداً: منصوب بالفتحة"],["مررتُ بزيدٍ","زيدٍ: مخفوض بالكسرة"],["لم يكتبْ","يكتبْ: مجزوم بالسكون"]]},
+{t:"علامات الرفع",m:"للرفع أربع علامات: الضمة، والواو، والألف، والنون.",
+e:["<b>الضمة</b> في أربعة مواضع: الاسم المفرد، وجمع التكسير، وجمع المؤنث السالم، والفعل المضارع الذي لم يتصل بآخره شيء.","<b>الواو</b> في موضعين: جمع المذكر السالم، والأسماء الخمسة: أبوك، أخوك، حموك، فوك، ذو مال.","<b>الألف</b> في المثنّى من الأسماء خاصة.","<b>النون</b> في الفعل المضارع إذا اتصل به ألف الاثنين أو واو الجماعة أو ياء المخاطبة، وتسمّى الأفعال الخمسة."],
+x:[["جاءَ محمدٌ","الضمة: اسم مفرد"],["جاءَ الرجالُ","الضمة: جمع تكسير"],["جاءَتِ المسلماتُ","الضمة: جمع مؤنث سالم"],["يكتبُ زيدٌ","يكتبُ: مضارع مرفوع بالضمة"],["جاءَ المسلمونَ","الواو: جمع مذكر سالم"],["جاءَ أبوكَ","الواو: من الأسماء الخمسة"],["جاءَ الرجلانِ","الألف: مثنّى"],["الطالبانِ يكتبانِ","النون: يكتبانِ من الأفعال الخمسة"]]},
+{t:"علامات النصب والخفض والجزم",m:"وللنصب خمس علامات: الفتحة، والألف، والكسرة، والياء، وحذف النون. وللخفض ثلاث علامات: الكسرة، والياء، والفتحة. وللجزم علامتان: السكون، والحذف.",
+e:["<b>النصب</b>: الفتحة (المفرد، جمع التكسير، المضارع المنصوب)، والألف (الأسماء الخمسة)، والكسرة (جمع المؤنث السالم)، والياء (المثنّى وجمع المذكر السالم)، وحذف النون (الأفعال الخمسة).","<b>الخفض</b>: الكسرة (المفرد المنصرف، جمع التكسير المنصرف، جمع المؤنث السالم)، والياء (الأسماء الخمسة، المثنّى، جمع المذكر السالم)، والفتحة (الاسم الذي لا ينصرف).","<b>الجزم</b>: السكون في المضارع الصحيح الآخر، والحذف في المضارع المعتلّ الآخر وفي الأفعال الخمسة (بحذف النون).","<b>قاعدة تعين على الحفظ</b>: الأصل في العلامات الحركات (ضمة، فتحة، كسرة)، وما عداها فروع تنوب عنها."],
+x:[["لن يكتبَ زيدٌ","الفتحة: مضارع منصوب"],["رأيتُ أباكَ","الألف: من الأسماء الخمسة"],["رأيتُ المسلماتِ","الكسرة: جمع مؤنث سالم"],["رأيتُ الرجلينِ","الياء: مثنّى منصوب"],["لن يكتبوا","حذف النون: من الأفعال الخمسة"],["مررتُ بأبيكَ","الياء: من الأسماء الخمسة"],["مررتُ بأحمدَ","الفتحة: اسم لا ينصرف"],["لم يكتبْ","السكون: مضارع صحيح الآخر"],["لم يخشَ","الحذف: حذف حرف العلة"]]}]},
+lam:{t:"لامية الأفعال",s:"لابن مالك في أبنية الأفعال وتصريفها",ch:[]}};
+B.ajr.ab=[
+{t:"باب الكلام",c:[0,1],
+q:[{q:"أيّ مما يأتي «كلام» بالمعنى الذي ذكره ابن آجرّوم؟",o:["زيدٌ","قامَ زيدٌ","إذا جاءَ زيدٌ"],a:1,e:"«قامَ زيدٌ» لفظ مركّب مفيد يحسن السكوت عليه."},
+{q:"أقسام الكلام ثلاثة، وهي:",o:["اسم وفعل وحرف","اسم وفعل وجملة","فعل وحرف وفاعل"],a:0,e:"الكلام: اسم، وفعل، وحرف جاء لمعنى."},
+{q:"كلمة «الكتابُ» اسم لأنها:",o:["دخلت عليها «ال»","دخلت عليها «قد»","اتصلت بها تاء التأنيث الساكنة"],a:0,e:"دخول الألف واللام من علامات الاسم."},
+{q:"أيّ كلمة تقبل دخول «قد» أو السين عليها؟",o:["كتابٌ","يذهبُ","في"],a:1,e:"«قد يذهبُ» و«سيذهبُ»؛ فهما من علامات الفعل."},
+{q:"«هل» في قولنا «هل جاءَ زيدٌ؟» هي:",o:["اسم","فعل","حرف"],a:2,e:"«هل» حرف استفهام لا يقبل علامة الاسم ولا الفعل."}],
+bf:"الاسم يدل على معنىً في نفسه دون زمن، والفعل يدل على معنىً مع زمن، والحرف لا يظهر معناه إلا مع غيره.",
+bc:"استخرج الاسم والفعل والحرف من الجملة: «هل يكتبُ الطالبُ الدرسَ؟»",
+ba:"هل: حرف. يكتبُ: فعل. الطالبُ: اسم. الدرسَ: اسم."},
+{t:"باب الإعراب",c:[2],
+q:[{q:"الإعراب هو:",o:["تغيير أواخر الكلم لاختلاف العوامل الداخلة عليها","تغيير أول الكلمة","زيادة حرف في الكلمة"],a:0,e:"الإعراب تغيّر آخر الكلمة بحسب العامل."},
+{q:"كم قسماً للإعراب؟",o:["ثلاثة","أربعة","خمسة"],a:1,e:"رفع ونصب وخفض وجزم."},
+{q:"أيّ هذه الأقسام لا يدخل الأسماء؟",o:["الرفع","النصب","الجزم"],a:2,e:"للأسماء الرفع والنصب والخفض ولا جزم فيها."},
+{q:"أيّ هذه الأقسام لا يدخل الأفعال؟",o:["النصب","الخفض","الجزم"],a:1,e:"للأفعال الرفع والنصب والجزم ولا خفض فيها."},
+{q:"في «رأيتُ زيداً» كلمة «زيداً»:",o:["مرفوعة","منصوبة","مخفوضة"],a:1,e:"وقعت بعد الفعل «رأيتُ» فنُصبت بالفتحة."}],
+bf:"العامل هو سبب تغيّر آخر الكلمة، فإذا تغيّر العامل تغيّرت العلامة: جاءَ زيدٌ، رأيتُ زيداً، مررتُ بزيدٍ.",
+bc:"أعرب بالعلامات: «جاءَ الطالبُ»، «رأيتُ الطالبَ»، «مررتُ بالطالبِ».",
+ba:"الطالبُ: مرفوع بالضمة. الطالبَ: منصوب بالفتحة. الطالبِ: مخفوض بالكسرة."},
+{t:"باب معرفة علامات الإعراب",c:[3,4],
+q:[{q:"علامات الرفع الأربع هي:",o:["الضمة والواو والألف والنون","الضمة والفتحة والكسرة والسكون","الضمة والياء والألف والحذف"],a:0,e:"للرفع أربع علامات: الضمة، والواو، والألف، والنون."},
+{q:"علامة رفع «المسلمونَ» في «جاءَ المسلمونَ»:",o:["الضمة","الواو","الألف"],a:1,e:"جمع المذكر السالم يُرفع بالواو."},
+{q:"علامة رفع «الرجلانِ» في «جاءَ الرجلانِ»:",o:["الواو","الألف","النون"],a:1,e:"المثنّى يُرفع بالألف."},
+{q:"في «لن يكتبوا» حُذفت النون لأن الفعل:",o:["منصوب من الأفعال الخمسة","مجزوم بالسكون","مرفوع بالضمة"],a:0,e:"الأفعال الخمسة تُنصب بحذف النون."},
+{q:"علامة خفض «أحمدَ» في «مررتُ بأحمدَ»:",o:["الكسرة","الياء","الفتحة"],a:2,e:"«أحمد» اسم لا ينصرف فيُخفض بالفتحة نيابةً عن الكسرة."}],
+bf:"الأسماء الخمسة تُرفع بالواو، وتُنصب بالألف، وتُخفض بالياء: جاءَ أبوكَ، رأيتُ أباكَ، مررتُ بأبيكَ.",
+bc:"ما علامة إعراب «أخوكَ» في: «جاءَ أخوكَ»، «رأيتُ أخاكَ»، «سلّمتُ على أخيكَ»؟",
+ba:"الواو في الرفع، والألف في النصب، والياء في الخفض؛ لأنه من الأسماء الخمسة."}];
+B.ajr.up=["باب المعربات","باب الأفعال","باب مرفوعات الأسماء (الفاعل)","نائب الفاعل","المبتدأ والخبر","العوامل الداخلة على المبتدأ والخبر","النعت","العطف","التوكيد","البدل","منصوبات الأسماء","مخفوضات الأسماء"];
+var m=document.getElementById("m");
+function home(){return '<h1>النحو والصرف</h1><p class="intro">الحمد لله رب العالمين. أُنشئ هذا الموقع لنفع محبّي تعلّم النحو والصرف، ممّن لا يجدون وقتاً للدراسة، ليتعلّموا مجّاناً بلا مقابل. نسأل الله أن يتقبّله وينفع به.</p><p class="intro">يُضاف درس جديد كل أسبوع بإذن الله حتى نهاية متن الآجرومية، ثم نبدأ لامية الأفعال.</p><div class="books"><a class="bk ajr" href="#ajr"><h2>الآجرومية</h2><p>'+B.ajr.s+'</p></a><a class="bk lam" href="#lam"><h2>لامية الأفعال<span class="soon">قريباً</span></h2><p>'+B.lam.s+'</p></a></div>'}
+function about(){return '<h1>عن الموقع</h1><section class="ch"><h2>المنشئ</h2><p class="ct">شعيب عبد الرحمن</p><p><bdi dir="ltr">Shuayb Abdirahman</bdi></p></section><section class="ch"><h2>التواصل</h2><p class="ct"><bdi dir="ltr">mywebsite.shu</bdi></p></section><section class="ch"><h2>هدف الموقع</h2><p>تيسير تعلّم علمَي النحو والصرف مجّاناً لكل من يحبّهما، عبر متنَين: الآجرومية ولامية الأفعال، بشرح مبسّط وأمثلة وتمارين.</p></section>'}
+function lsn(c,i){return '<section class="ch"><h2>'+(i+1)+'. '+c.t+'</h2>'+(c.au?'<audio controls preload="none" src="'+c.au+'"></audio>':'<p class="au">🎙️ تسجيل صوتي لهذا الدرس: قريباً إن شاء الله</p>')+'<p class="mt">'+c.m+'</p><h3>الشرح</h3><ul class="pt">'+c.e.map(function(t){return '<li>'+t+'</li>'}).join('')+'</ul><h3>أمثلة</h3><ul class="ex">'+c.x.map(function(r){return '<li><b>'+r[0]+'</b><span>'+r[1]+'</span></li>'}).join('')+'</ul></section>'}
+var done={};
+function isDone(id){if(done[id])return true;try{return !!localStorage.getItem("d"+id)}catch(e){return false}}
+function book(k){var b=B[k],h='<h1>'+b.t+'</h1><p class="sub">'+b.s+'</p>';
+if(!b.ab)return h+'<section class="ch cs"><p class="ct">قريباً إن شاء الله</p><p>نعمل على إعداد شرح مبسّط للامية الأفعال، وسيُنشر هنا فور اكتماله.</p></section>';
+h+='<p class="intro">يُضاف درس جديد كل أسبوع بإذن الله حتى نهاية المتن.</p>';return h+'<div class="books">'+b.ab.map(function(a,i){return '<a class="bk '+k+'" href="#'+k+'/'+i+'"><h2>'+a.t+'</h2><p>الدروس، ثم الاختبار، ثم المكافأة</p></a>'}).join('')+'</div>'+up(b)}
+function up(b){return b.up?'<h3 class="ph">قريباً بإذن الله</h3><ol class="up">'+b.up.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol>':''}
+function bab(k,i,t){var b=B[k],a=b.ab[i],base='#'+k+'/'+i,id=k+i,
+h='<p class="sub"><a href="#'+k+'">'+b.t+'</a> / '+a.t+'</p><h1>'+a.t+'</h1><div class="tabs">'+[['','الدروس'],['quiz','الاختبار'],['bonus','المكافأة']].map(function(x){return '<a href="'+base+(x[0]?'/'+x[0]:'')+'"'+(x[0]==t?' class="on"':'')+'>'+x[1]+'</a>'}).join('')+'</div>';
+if(t=="quiz"){h+='<div id="qz" data-id="'+id+'" data-base="'+base+'">';a.q.forEach(function(q,j){h+='<section class="ch q" data-a="'+q.a+'" data-e="'+q.e+'"><p>'+(j+1)+'. '+q.q+'</p>'+q.o.map(function(o,n){return '<button class="o" data-n="'+n+'">'+o+'</button>'}).join('')+'<p class="fb" aria-live="polite"></p></section>'});return h+'<p id="res" class="res" aria-live="polite"></p></div>'}
+if(t=="bonus"){if(!isDone(id))return h+'<section class="ch cs"><p class="ct">المكافأة مقفلة</p><p>أنهِ الاختبار أولاً لتفتح المكافأة.</p><p><a class="btn" href="'+base+'/quiz">اذهب إلى الاختبار</a></p></section>';
+return h+'<section class="ch"><h2>مكافأة '+a.t+'</h2><h3>فائدة</h3><p>'+a.bf+'</p><h3>تحدٍّ</h3><p>'+a.bc+'</p><details><summary>أظهر الجواب</summary><p>'+a.ba+'</p></details></section>'}
+a.c.forEach(function(ci){h+=lsn(b.ch[ci],ci)});return h+'<p><a class="btn" href="'+base+'/quiz">ابدأ الاختبار</a></p>'}
+function go(){var p=(location.hash||"#home").slice(1).split("/"),k=p[0];if(!B[k]&&k!="about")k="home";
+var i=+p[1],hb=B[k]&&B[k].ab&&B[k].ab[i];
+document.documentElement.dataset.b=k=="about"?"home":k;m.innerHTML=k=="home"?home():k=="about"?about():hb?bab(k,i,p[2]||""):book(k);
+document.querySelectorAll("nav a").forEach(function(a){a.classList.toggle("on",a.dataset.n==k)});window.scrollTo(0,0)}
+m.addEventListener("click",function(e){var t=e.target;if(!t.classList.contains("o"))return;var q=t.parentNode;if(q.dataset.d)return;q.dataset.d=1;
+var ok=+t.dataset.n==+q.dataset.a;t.classList.add(ok?"ok":"no");if(!ok)q.querySelectorAll(".o")[+q.dataset.a].classList.add("ok");else q.dataset.s=1;
+q.querySelector(".fb").textContent=(ok?"أحسنت! ":"الصواب غير ذلك. ")+q.dataset.e;
+var z=document.getElementById("qz"),n=z.querySelectorAll(".q").length;
+if(z.querySelectorAll(".q[data-d]").length==n){var sc=z.querySelectorAll(".q[data-s]").length,id=z.dataset.id;done[id]=1;try{localStorage.setItem("d"+id,"1")}catch(x){}
+document.getElementById("res").innerHTML="نتيجتك: "+sc+" من "+n+". <a class=\"btn\" href=\""+z.dataset.base+"/bonus\">افتح المكافأة</a>"}});
+var R=document.documentElement,tb=document.getElementById("th");
+function tm(){return R.dataset.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}
+try{var sv=localStorage.getItem("th");if(sv)R.dataset.theme=sv}catch(e){}
+function sy(){tb.textContent=tm()=="dark"?"☀️ نهاري":"🌙 ليلي"}
+tb.onclick=function(){var n=tm()=="dark"?"light":"dark";R.dataset.theme=n;try{localStorage.setItem("th",n)}catch(e){}sy()};sy();
+window.addEventListener("hashchange",go);go();
+if(window.matchMedia("(prefers-reduced-motion:reduce)").matches){var an=document.querySelector("animateTransform");if(an)an.remove()}
+</script>
+</body>
+</html>
